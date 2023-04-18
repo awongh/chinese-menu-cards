@@ -4,7 +4,7 @@ const client = require("https");
 
 const restaurants = [];
 
-const wsChromeEndpointurl =  YOUR WEB SOCKET URL HERE
+const wsChromeEndpointurl = YOUR CHROME SOCKET URL
 
 function formattedDate() {
   const date = new Date();
@@ -39,71 +39,20 @@ async function downloadImage(url, filepath) {
   });
 }
 
-async function writeFile(filename, writedata) {
-  try {
-    await fs.promises.writeFile(
-      filename,
-      JSON.stringify(writedata, null, 4),
-      "utf8"
-    );
-    console.log("data is written successfully in the file");
-  } catch (err) {
-    console.log("not able to write data in the file ");
-  }
+async function updateJsonFile(filePath, inputData) {
+  // Read the JSON file from the given path
+  const rawData = await fs.promises.readFile(filePath);
+  const jsonData = JSON.parse(rawData);
+
+  // Use the given update function to make changes to the JSON data
+  jsonData.restaurants.push(inputData);
+
+  // Write the updated JSON data back to the file
+  return await fs.promises.writeFile(
+    filePath,
+    JSON.stringify(jsonData, null, 4)
+  );
 }
-
-const listenForMenus = async (response) => {
-  // listen for menu URL
-  // https://tw.fd-api.com/api/v5/vendors/f6sq?include=menus,bundles,multiple_discounts&language_id=6&opening_type=delivery&basket_currency=TWD&show_pro_deals=true
-  const regex = /\/tw.fd-api.com\/api\/v5\/vendors\//;
-  const url = response.url();
-  const isMatch = regex.test(url);
-
-  // filter out the JS XHR requests
-  const headers = response.headers();
-  const contentType = headers["content-type"];
-
-  if (contentType === "application/json") {
-    console.log("<<", response.status(), response.url());
-    if (isMatch) {
-      const responseBuffer = await response.buffer();
-      const responseString = responseBuffer.toString();
-      const responseObj = JSON.parse(responseString);
-      console.log("stuff", responseObj.data);
-      const restaurant = responseObj.data;
-
-      if (!restaurant) return;
-
-      // download images
-      if (restaurant.menus) {
-        for (var menuIndex in restaurant.menus) {
-          const menu = restaurant.menus[menuIndex];
-          const menuId = menu.id;
-          for (var menuCategoryIndex in menu.menu_categories) {
-            const menuCategory = menu.menu_categories[menuCategoryIndex];
-            const menuCategoryId = menuCategory.id;
-
-            for (var productIndex in menuCategory.products) {
-              const product = menuCategory.products[productIndex];
-              const productId = product.id;
-
-              if (product.images.length > 0) {
-                image = product.images[0];
-                // get urls
-                await downloadImage(
-                  image.image_url,
-                  `./menu-images/${runId}_${menuId}-${menuCategoryId}-${productId}.jpg`
-                );
-              }
-            }
-          }
-        }
-      }
-
-      restaurants.push(restaurant);
-    }
-  }
-};
 
 // promise delay, if we need it
 const delay = (milliseconds) =>
@@ -111,6 +60,68 @@ const delay = (milliseconds) =>
 
 (async () => {
   const runId = formattedDate();
+  const RUN_FILE = `./${runId}_restaurants.json`;
+
+  const listenForMenus = async (response) => {
+    // listen for menu URL
+    // https://tw.fd-api.com/api/v5/vendors/f6sq?include=menus,bundles,multiple_discounts&language_id=6&opening_type=delivery&basket_currency=TWD&show_pro_deals=true
+    const regex = /\/tw.fd-api.com\/api\/v5\/vendors\//;
+    const url = response.url();
+    const isMatch = regex.test(url);
+
+    // filter out the JS XHR requests
+    const headers = response.headers();
+    const contentType = headers["content-type"];
+
+    if (contentType === "application/json") {
+      console.log("<<", response.status(), response.url());
+      if (isMatch) {
+        const responseBuffer = await response.buffer();
+        const responseString = responseBuffer.toString();
+        const responseObj = JSON.parse(responseString);
+        console.log("stuff", responseObj.data);
+        const restaurant = responseObj.data;
+
+        if (!restaurant) return;
+
+        // download images
+        if (restaurant.menus) {
+          for (var menuIndex in restaurant.menus) {
+            const menu = restaurant.menus[menuIndex];
+            const menuId = menu.id;
+            for (var menuCategoryIndex in menu.menu_categories) {
+              const menuCategory = menu.menu_categories[menuCategoryIndex];
+              const menuCategoryId = menuCategory.id;
+
+              for (var productIndex in menuCategory.products) {
+                const product = menuCategory.products[productIndex];
+                const productId = product.id;
+
+                if (product.images.length > 0) {
+                  image = product.images[0];
+                  const filepath = `menu-images/${runId}_${menuId}-${menuCategoryId}-${productId}.jpg`;
+                  product.images[0].local_filepath = filepath;
+                  // get urls
+                  await downloadImage(image.image_url, `./${filepath}`);
+                }
+              }
+            }
+          }
+        }
+        const file_path = RUN_FILE;
+        updateJsonFile(file_path, restaurant);
+        //restaurants.push(restaurant);
+      }
+    }
+  };
+
+  // init the empty file for this run
+  await fs.promises.writeFile(
+    RUN_FILE,
+    JSON.stringify({'restaurants':[]}, null, 4),
+    "utf8"
+  );
+
   let screenShotCounter = 0;
   // Launches a browser instance
   const browser = await puppeteer.connect({
@@ -154,7 +165,7 @@ const delay = (milliseconds) =>
   page.on("response", listenForMenus);
 
   //for (let i = 0; i < links.length; i++) {
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 1; i++) {
     const url = links[i];
     const restaurantResponse = await page.goto(`${url}`, {
       waitUntil: "networkidle0",
@@ -169,10 +180,6 @@ const delay = (milliseconds) =>
 
     console.log("Screenshot taken");
   }
-
-  const file_path = `./${runId}_restaurants.json`;
-  const allData = { restaurants };
-  writeFile(file_path, allData);
 
   // Closes the browser instance
   //await browser.close();
