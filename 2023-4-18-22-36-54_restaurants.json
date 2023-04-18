@@ -1,0 +1,1553 @@
+{
+    "restaurants": [
+        {
+            "id": 53755,
+            "code": "f3qd",
+            "accepts_instructions": true,
+            "address": "(△)高雄市三民區自由一路222號",
+            "address_line2": "",
+            "budget": 2,
+            "deals": [],
+            "chain": {
+                "id": 0,
+                "is_accepting_global_vouchers": false,
+                "main_vendor_code": "",
+                "main_vendor_id": 0,
+                "name": null,
+                "url_key": null,
+                "code": null
+            },
+            "city": {
+                "id": 48632,
+                "name": "Kaohsiung City",
+                "url_key": "kaohsiung-city",
+                "is_top_city": false,
+                "is_main_city": false,
+                "is_express_delivery_enabled": false,
+                "latitude": 22.62033462524414,
+                "longitude": 120.3120346069336,
+                "timezone": "Asia/Taipei"
+            },
+            "constraints": [],
+            "cuisines": [
+                {
+                    "id": 166,
+                    "name": "中式",
+                    "url_key": "zhong-shi",
+                    "main": true
+                },
+                {
+                    "id": 1214,
+                    "name": "火鍋",
+                    "url_key": "huo-guo",
+                    "main": false
+                }
+            ],
+            "custom_location_url": "",
+            "customer_phone": "+88673803199",
+            "customer_type": "all",
+            "delivery_box": "",
+            "delivery_conditions": [
+                {
+                    "delivery_fee": 0,
+                    "delivery_fee_type": "amount",
+                    "minimum_order_amount": 79,
+                    "maximum_order_amount": 0
+                }
+            ],
+            "delivery_fee_type": "amount",
+            "delivery_fee_source": "dps",
+            "delivery_provider_id": 0,
+            "description": "食品業者登錄字號：E-200022119-00000-8",
+            "discounts": [],
+            "distance": 13097.808,
+            "dynamic_pricing": {
+                "service_fee": {
+                    "total": 0
+                },
+                "adjustments": {
+                    "current_discount": 0,
+                    "next_discount": {
+                        "is_free": true,
+                        "difference": 0,
+                        "discount": 0,
+                        "show_message": false,
+                        "progress_percentage": 100
+                    }
+                },
+                "fleet_utilization": 0,
+                "customer_tag": {
+                    "variant": "Original",
+                    "tag": "New",
+                    "subscription_id": null
+                },
+                "price_reason": null
+            },
+            "experiments": [
+                {
+                    "experiment_id": "recommendation-products-elements",
+                    "experiment_variation": "Control",
+                    "is_participating": false
+                }
+            ],
+            "food_characteristics": [],
+            "favorite_data": null,
+            "favorite": null,
+            "has_delivery_provider": true,
+            "hero_image": "https://images.deliveryhero.io/image/fd-tw/LH/f3qd-hero.jpg",
+            "hero_listing_image": "https://images.deliveryhero.io/image/fd-tw/LH/f3qd-listing.jpg",
+            "is_active": true,
+            "is_busy": false,
+            "is_best_in_city": false,
+            "is_checkout_comment_enabled": true,
+            "is_delivery_enabled": true,
+            "is_express_delivery_available": false,
+            "is_express_delivery_enabled": false,
+            "is_new": false,
+            "is_new_until": "2020-05-10T00:00:00Z",
+            "is_pickup_enabled": true,
+            "is_premium": false,
+            "premium_position": 0,
+            "is_preorder_enabled": true,
+            "is_promoted": false,
+            "is_replacement_dish_enabled": false,
+            "is_service_fee_enabled": false,
+            "is_service_tax_enabled": false,
+            "is_service_tax_visible": false,
+            "is_test": false,
+            "is_vat_disabled": false,
+            "is_vat_included_in_product_price": true,
+            "is_vat_visible": false,
+            "is_vat_included": true,
+            "is_voucher_enabled": true,
+            "is_super_vendor": false,
+            "latitude": 22.6506975,
+            "location_event": null,
+            "logo": "",
+            "longitude": 120.30912756,
+            "loyalty_percentage_amount": 0,
+            "loyalty_program_enabled": false,
+            "food_license_number": "",
+            "maximum_express_order_amount": 0,
+            "menus": [
+                {
+                    "ab_sorting_applied": false,
+                    "id": 89643,
+                    "code": "",
+                    "name": "Main",
+                    "description": "",
+                    "type": "delivery",
+                    "opening_time": "00:00:00",
+                    "closing_time": "23:59:00",
+                    "menu_categories": [
+                        {
+                            "id": 629266,
+                            "code": "79a17a29-bbce-4313-acc8-f7af45f5acda",
+                            "name": "麵類",
+                            "description": "",
+                            "products": [
+                                {
+                                    "id": 5764818,
+                                    "code": "87bb347b-d8bf-4133-ad9a-916909edfb0a",
+                                    "name": "蒜香乾拌麵",
+                                    "description": "簡單樸實的美味，不知道吃什麼的時候就選這道！(此描述僅供參考)",
+                                    "display_price": "",
+                                    "master_category_id": 4,
+                                    "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764818.jpg?width=%s",
+                                    "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764818.jpg?width=%s",
+                                    "images_urls": [],
+                                    "images": [
+                                        {
+                                            "image_url": "https://images.deliveryhero.io/image/fd-tw/Products/5764818.jpg",
+                                            "tags": {},
+                                            "local_filepath": "menu-images/2023-4-18-22-36-54_89643-629266-5764818.jpg"
+                                        }
+                                    ],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 6221353,
+                                            "code": "6cedea57-9fb7-4318-a909-6b6700d17e60",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 69,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "is_bundle": false
+                                },
+                                {
+                                    "id": 5764820,
+                                    "code": "7b462809-f366-468d-b962-dca6dff8a2eb",
+                                    "name": "什錦素湯麵",
+                                    "description": "",
+                                    "display_price": "",
+                                    "master_category_id": 4,
+                                    "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764820.jpg?width=%s",
+                                    "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764820.jpg?width=%s",
+                                    "images_urls": [],
+                                    "images": [
+                                        {
+                                            "image_url": "https://images.deliveryhero.io/image/fd-tw/Products/5764820.jpg",
+                                            "tags": {},
+                                            "local_filepath": "menu-images/2023-4-18-22-36-54_89643-629266-5764820.jpg"
+                                        }
+                                    ],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 6221355,
+                                            "code": "9d582891-c968-4212-a32e-91c71fc01a15",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 92,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "is_bundle": false
+                                },
+                                {
+                                    "id": 5764821,
+                                    "code": "53454a02-aa08-4ace-aa15-cb5bdae152de",
+                                    "name": "招牌酸白菜豬肉拉麵",
+                                    "description": "肉品原產地：台灣豬肉",
+                                    "display_price": "",
+                                    "master_category_id": 4,
+                                    "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764821.jpg?width=%s",
+                                    "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764821.jpg?width=%s",
+                                    "images_urls": [],
+                                    "images": [
+                                        {
+                                            "image_url": "https://images.deliveryhero.io/image/fd-tw/Products/5764821.jpg",
+                                            "tags": {},
+                                            "local_filepath": "menu-images/2023-4-18-22-36-54_89643-629266-5764821.jpg"
+                                        }
+                                    ],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 6221356,
+                                            "code": "8fdfa3a1-5826-4909-a8e3-572b15515ed6",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 150,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "tags": [
+                                        "popular"
+                                    ],
+                                    "is_bundle": false
+                                }
+                            ],
+                            "is_popular_category": false
+                        },
+                        {
+                            "id": 629267,
+                            "code": "1953dce4-2d58-4171-9de1-56883f84902f",
+                            "name": "煲類、火鍋類",
+                            "description": "",
+                            "products": [
+                                {
+                                    "id": 5764823,
+                                    "code": "fcfea1f6-f618-401f-ad9c-7fac46978d89",
+                                    "name": "酸菜白肉鍋【中】",
+                                    "description": "白肉搭配酸菜燉煮出的濃郁湯汁，回甘順口又美味！(此描述僅供參考)",
+                                    "display_price": "",
+                                    "master_category_id": 4,
+                                    "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764823.jpg?width=%s",
+                                    "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764823.jpg?width=%s",
+                                    "images_urls": [],
+                                    "images": [
+                                        {
+                                            "image_url": "https://images.deliveryhero.io/image/fd-tw/Products/5764823.jpg",
+                                            "tags": {},
+                                            "local_filepath": "menu-images/2023-4-18-22-36-54_89643-629267-5764823.jpg"
+                                        }
+                                    ],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 6221358,
+                                            "code": "337bfb15-ef1c-421c-8eea-cb695d702736",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 782,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "tags": [
+                                        "popular"
+                                    ],
+                                    "is_bundle": false
+                                },
+                                {
+                                    "id": 5764824,
+                                    "code": "9a0bc179-cd4e-4d28-b231-7a000d03e2ed",
+                                    "name": "酸菜白肉鍋【小】",
+                                    "description": "白肉搭配酸菜燉煮出的濃郁湯汁，回甘順口又美味！(此描述僅供參考)",
+                                    "display_price": "",
+                                    "master_category_id": 4,
+                                    "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764824.jpg?width=%s",
+                                    "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764824.jpg?width=%s",
+                                    "images_urls": [],
+                                    "images": [
+                                        {
+                                            "image_url": "https://images.deliveryhero.io/image/fd-tw/Products/5764824.jpg",
+                                            "tags": {},
+                                            "local_filepath": "menu-images/2023-4-18-22-36-54_89643-629267-5764824.jpg"
+                                        }
+                                    ],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 6221359,
+                                            "code": "a66c82f7-6d5a-4bc5-ab4d-90622dfdb13c",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 358,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "tags": [
+                                        "popular"
+                                    ],
+                                    "is_bundle": false
+                                }
+                            ],
+                            "is_popular_category": false
+                        },
+                        {
+                            "id": 629268,
+                            "code": "2301db1e-2332-4ccc-8200-d2919d59653c",
+                            "name": "飯類",
+                            "description": "",
+                            "products": [
+                                {
+                                    "id": 5764826,
+                                    "code": "12a49546-0660-43d2-9438-b9a72ba7d01d",
+                                    "name": "蝦仁炒飯",
+                                    "description": "鮮甜的蝦仁配上粒粒分明的炒飯，是人氣必點的炒飯之一。(此描述僅供參考)",
+                                    "display_price": "",
+                                    "master_category_id": 4,
+                                    "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764826.jpg?width=%s",
+                                    "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764826.jpg?width=%s",
+                                    "images_urls": [],
+                                    "images": [
+                                        {
+                                            "image_url": "https://images.deliveryhero.io/image/fd-tw/Products/5764826.jpg",
+                                            "tags": {},
+                                            "local_filepath": "menu-images/2023-4-18-22-36-54_89643-629268-5764826.jpg"
+                                        }
+                                    ],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 6221361,
+                                            "code": "7bd4a281-3f1f-4867-ad21-20fafd8aa1c8",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 138,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "is_bundle": false
+                                },
+                                {
+                                    "id": 5764827,
+                                    "code": "2ccd7c36-4b21-42f2-880b-9d6fbd9f2ccb",
+                                    "name": "櫻花蝦炒飯",
+                                    "description": "香氣濃郁的櫻花蝦加入米飯大火快炒，獨樹一格的鮮美滋味。(此描述僅供參考)",
+                                    "display_price": "",
+                                    "master_category_id": 4,
+                                    "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764827.jpg?width=%s",
+                                    "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764827.jpg?width=%s",
+                                    "images_urls": [],
+                                    "images": [
+                                        {
+                                            "image_url": "https://images.deliveryhero.io/image/fd-tw/Products/5764827.jpg",
+                                            "tags": {},
+                                            "local_filepath": "menu-images/2023-4-18-22-36-54_89643-629268-5764827.jpg"
+                                        }
+                                    ],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 6221362,
+                                            "code": "9d89337f-aadc-490e-8599-cd360d85fa9c",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 184,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "is_bundle": false
+                                }
+                            ],
+                            "is_popular_category": false
+                        },
+                        {
+                            "id": 629269,
+                            "code": "88d5ccea-a179-46b4-a899-d452d440bd88",
+                            "name": "餃類",
+                            "description": "",
+                            "products": [
+                                {
+                                    "id": 5764828,
+                                    "code": "b6340c84-f5d5-4d0c-b606-8550e1ee01fc",
+                                    "name": "鮮肉蒸餃【8粒】",
+                                    "description": "肉品原產地：台灣豬肉",
+                                    "display_price": "",
+                                    "master_category_id": 4,
+                                    "file_path": "",
+                                    "logo_path": "",
+                                    "images_urls": [],
+                                    "images": [],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 6221363,
+                                            "code": "ddb8cf10-a9fa-4792-9ccd-d1db5c9152ba",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 115,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "is_bundle": false
+                                },
+                                {
+                                    "id": 5764829,
+                                    "code": "675e121b-2a34-43ce-962e-afeaf34d9a1b",
+                                    "name": "湯包【8粒】",
+                                    "description": "肉品原產地：台灣豬肉",
+                                    "display_price": "",
+                                    "master_category_id": 4,
+                                    "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764829.jpg?width=%s",
+                                    "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764829.jpg?width=%s",
+                                    "images_urls": [],
+                                    "images": [
+                                        {
+                                            "image_url": "https://images.deliveryhero.io/image/fd-tw/Products/5764829.jpg",
+                                            "tags": {},
+                                            "local_filepath": "menu-images/2023-4-18-22-36-54_89643-629269-5764829.jpg"
+                                        }
+                                    ],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 6221364,
+                                            "code": "21ed21d3-82d1-46fb-a8df-e6071229ad6c",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 127,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "is_bundle": false
+                                }
+                            ],
+                            "is_popular_category": false
+                        },
+                        {
+                            "id": 629270,
+                            "code": "65c80419-8522-4e11-8b84-1eb271be9c3c",
+                            "name": "餅類",
+                            "description": "",
+                            "products": [
+                                {
+                                    "id": 5764831,
+                                    "code": "9dd053aa-32ea-4f33-9ca0-73c23d8309df",
+                                    "name": "蔥油酥餅",
+                                    "description": "",
+                                    "display_price": "",
+                                    "master_category_id": 3,
+                                    "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764831.jpg?width=%s",
+                                    "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764831.jpg?width=%s",
+                                    "images_urls": [],
+                                    "images": [
+                                        {
+                                            "image_url": "https://images.deliveryhero.io/image/fd-tw/Products/5764831.jpg",
+                                            "tags": {},
+                                            "local_filepath": "menu-images/2023-4-18-22-36-54_89643-629270-5764831.jpg"
+                                        }
+                                    ],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 6221366,
+                                            "code": "91ea803b-123f-42af-8cac-012ccbf3ab12",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 81,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "tags": [
+                                        "popular"
+                                    ],
+                                    "is_bundle": false
+                                },
+                                {
+                                    "id": 5764832,
+                                    "code": "ee8c0796-3beb-4464-a07a-b3dc1f1ee70f",
+                                    "name": "甜蜜麻酥餅",
+                                    "description": "",
+                                    "display_price": "",
+                                    "master_category_id": 3,
+                                    "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764832.jpg?width=%s",
+                                    "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764832.jpg?width=%s",
+                                    "images_urls": [],
+                                    "images": [
+                                        {
+                                            "image_url": "https://images.deliveryhero.io/image/fd-tw/Products/5764832.jpg",
+                                            "tags": {},
+                                            "local_filepath": "menu-images/2023-4-18-22-36-54_89643-629270-5764832.jpg"
+                                        }
+                                    ],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 6221367,
+                                            "code": "52f8d481-3655-44e2-a2cd-085381aa2d9c",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 104,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "tags": [
+                                        "popular"
+                                    ],
+                                    "is_bundle": false
+                                },
+                                {
+                                    "id": 5764833,
+                                    "code": "86c557d6-e953-4887-a2da-8abd55e094e0",
+                                    "name": "烤鴨大蔥捲餅",
+                                    "description": "",
+                                    "display_price": "",
+                                    "master_category_id": 3,
+                                    "file_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764833.jpg?width=%s",
+                                    "logo_path": "https://images.deliveryhero.io/image/fd-tw/Products/5764833.jpg?width=%s",
+                                    "images_urls": [],
+                                    "images": [
+                                        {
+                                            "image_url": "https://images.deliveryhero.io/image/fd-tw/Products/5764833.jpg",
+                                            "tags": {},
+                                            "local_filepath": "menu-images/2023-4-18-22-36-54_89643-629270-5764833.jpg"
+                                        }
+                                    ],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 6221368,
+                                            "code": "5751efa7-5ab4-42ab-99a1-fb13ae76d4c9",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 138,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "tags": [
+                                        "popular"
+                                    ],
+                                    "is_bundle": false
+                                }
+                            ],
+                            "is_popular_category": false
+                        },
+                        {
+                            "id": 1391125,
+                            "code": "50ede6b1-2d69-4927-a64f-73b7967ca845",
+                            "name": "海鮮類",
+                            "description": "",
+                            "products": [
+                                {
+                                    "id": 22536607,
+                                    "code": "e3554d42-f7e4-4c86-904c-2b4b9a72f169",
+                                    "name": "麻油泰國蝦",
+                                    "description": "",
+                                    "display_price": "",
+                                    "master_category_id": 3,
+                                    "file_path": "",
+                                    "logo_path": "",
+                                    "images_urls": [],
+                                    "images": [],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 23412146,
+                                            "code": "32f6dcc8-d47b-44c5-8bd0-ca326fee0f48",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 650,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "is_bundle": false
+                                },
+                                {
+                                    "id": 22536605,
+                                    "code": "752b9292-4d69-4a25-afb9-09c1a5d5dc07",
+                                    "name": "檸檬泰國蝦",
+                                    "description": "放入高湯熬煮的蝦子，鮮甜肉質、扎實口感，完美體現海鮮的特色！(此描述僅供參考)",
+                                    "display_price": "",
+                                    "master_category_id": 3,
+                                    "file_path": "",
+                                    "logo_path": "",
+                                    "images_urls": [],
+                                    "images": [],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 23412144,
+                                            "code": "cb4a0289-f78f-4013-988b-9cd1259cb152",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 650,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "is_bundle": false
+                                },
+                                {
+                                    "id": 22536637,
+                                    "code": "0c87d578-25c3-4ad4-be2d-8b752d4676c4",
+                                    "name": "烤鳳螺",
+                                    "description": "烤海鮮料理 | 原味",
+                                    "display_price": "",
+                                    "master_category_id": 3,
+                                    "file_path": "",
+                                    "logo_path": "",
+                                    "images_urls": [],
+                                    "images": [],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 23412176,
+                                            "code": "be7228d3-be2f-469d-8c25-b05d3aeedc47",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 650,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "is_bundle": false
+                                },
+                                {
+                                    "id": 22536642,
+                                    "code": "c12912a8-9653-41a8-80cf-15fa3f170d1d",
+                                    "name": "胡椒鳳螺",
+                                    "description": "烤海鮮料理",
+                                    "display_price": "",
+                                    "master_category_id": 3,
+                                    "file_path": "",
+                                    "logo_path": "",
+                                    "images_urls": [],
+                                    "images": [],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 23412181,
+                                            "code": "9ab01a9a-0e43-433b-bede-b82c479ca312",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 650,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "is_bundle": false
+                                },
+                                {
+                                    "id": 22536646,
+                                    "code": "00489ace-2e24-41f6-829b-24fe122f6904",
+                                    "name": "沙茶泰國蝦",
+                                    "description": "泰國蝦料理",
+                                    "display_price": "",
+                                    "master_category_id": 3,
+                                    "file_path": "",
+                                    "logo_path": "",
+                                    "images_urls": [],
+                                    "images": [],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 23412185,
+                                            "code": "f7892985-14ef-43fb-a3cd-38d167c1c184",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 650,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "is_bundle": false
+                                },
+                                {
+                                    "id": 22536650,
+                                    "code": "88611a70-53af-4d3c-89b2-bd25e3e85e4a",
+                                    "name": "紅燒泰國蝦",
+                                    "description": "泰國蝦料理",
+                                    "display_price": "",
+                                    "master_category_id": 3,
+                                    "file_path": "",
+                                    "logo_path": "",
+                                    "images_urls": [],
+                                    "images": [],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 23412189,
+                                            "code": "2ff044a2-58fb-4867-892f-f9eee5e9fb37",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 650,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "is_bundle": false
+                                },
+                                {
+                                    "id": 22536653,
+                                    "code": "b968b97a-a58b-4cf9-bddc-ee23f19b5162",
+                                    "name": "胡椒泰國蝦",
+                                    "description": "泰國蝦料理",
+                                    "display_price": "",
+                                    "master_category_id": 3,
+                                    "file_path": "",
+                                    "logo_path": "",
+                                    "images_urls": [],
+                                    "images": [],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 23412192,
+                                            "code": "ea46e935-9475-4696-9a10-ee022c96e456",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 650,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "is_bundle": false
+                                },
+                                {
+                                    "id": 22536657,
+                                    "code": "3254ceb9-dcf2-4176-a1fe-e3675d7f77e4",
+                                    "name": "鹽烤泰國蝦",
+                                    "description": "",
+                                    "display_price": "",
+                                    "master_category_id": 3,
+                                    "file_path": "",
+                                    "logo_path": "",
+                                    "images_urls": [],
+                                    "images": [],
+                                    "is_prepacked_item": false,
+                                    "is_sold_out": false,
+                                    "is_express_item": true,
+                                    "exclude_dish_information": false,
+                                    "additives": [],
+                                    "is_alcoholic_item": false,
+                                    "sold_out_options": [
+                                        {
+                                            "default": true,
+                                            "option": "REFUND",
+                                            "text": "NEXTGEN_SoldOutOptions_Refund"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CANCEL",
+                                            "text": "NEXTGEN_SoldOutOptions_Cancel"
+                                        },
+                                        {
+                                            "default": false,
+                                            "option": "CALL_CUSTOMER",
+                                            "text": "NEXTGEN_SoldOutOptions_CALL_CUSTOMER"
+                                        }
+                                    ],
+                                    "product_variations": [
+                                        {
+                                            "id": 23412196,
+                                            "code": "e01b7b58-0c36-4a8a-8077-679df28c0690",
+                                            "remote_code": "",
+                                            "container_price": 0,
+                                            "price": 650,
+                                            "topping_ids": [],
+                                            "is_vegetarian": false,
+                                            "is_non_vegetarian": false,
+                                            "spiceness": "",
+                                            "topping_properties": [],
+                                            "unit_pricing": null
+                                        }
+                                    ],
+                                    "half_type": "",
+                                    "is_half_type_available": false,
+                                    "is_bundle": false
+                                }
+                            ],
+                            "is_popular_category": false
+                        }
+                    ],
+                    "toppings": {},
+                    "tags": {
+                        "popular": {
+                            "name": "popular",
+                            "translation_keys": {
+                                "description": "NEXTGEN_POPULAR_CATEGORY_DESCRIPTION",
+                                "title": "NEXTGEN_POPULAR_DISH_TAG"
+                            },
+                            "elements": [
+                                "label",
+                                "category"
+                            ],
+                            "metadata": {
+                                "sorting": [
+                                    5764833,
+                                    5764831,
+                                    5764832,
+                                    5764823,
+                                    5764824,
+                                    5764821
+                                ]
+                            }
+                        }
+                    }
+                }
+            ],
+            "toppings": {},
+            "metadata": {
+                "is_delivery_available": true,
+                "is_pickup_available": true,
+                "is_express_delivery_available": false,
+                "is_temporary_closed": false,
+                "has_discount": false,
+                "timezone": "Asia/Taipei",
+                "events": [],
+                "close_reasons": [],
+                "is_flood_feature_closed": false,
+                "available_in": null
+            },
+            "minimum_delivery_fee": 0,
+            "minimum_delivery_time": 0,
+            "minimum_order_amount": 79,
+            "minimum_pickup_time": 15,
+            "multiple_toppings": false,
+            "name": "大不同酸菜白肉鍋",
+            "original_delivery_fee": 0,
+            "payment_types": [],
+            "post_code": "80794",
+            "primary_cuisine_id": 166,
+            "rating": 4.3,
+            "topic_ratings": null,
+            "redirection_url": "",
+            "review_number": 74,
+            "review_with_comment_number": 0,
+            "schedules": [
+                {
+                    "id": 0,
+                    "weekday": 1,
+                    "opening_type": "delivering",
+                    "opening_time": "16:00",
+                    "closing_time": "23:45"
+                },
+                {
+                    "id": 0,
+                    "weekday": 2,
+                    "opening_type": "delivering",
+                    "opening_time": "16:00",
+                    "closing_time": "23:45"
+                },
+                {
+                    "id": 0,
+                    "weekday": 3,
+                    "opening_type": "delivering",
+                    "opening_time": "16:00",
+                    "closing_time": "23:45"
+                },
+                {
+                    "id": 0,
+                    "weekday": 4,
+                    "opening_type": "delivering",
+                    "opening_time": "16:00",
+                    "closing_time": "23:45"
+                },
+                {
+                    "id": 0,
+                    "weekday": 5,
+                    "opening_type": "delivering",
+                    "opening_time": "11:00",
+                    "closing_time": "23:45"
+                },
+                {
+                    "id": 0,
+                    "weekday": 6,
+                    "opening_type": "delivering",
+                    "opening_time": "11:00",
+                    "closing_time": "23:59"
+                },
+                {
+                    "id": 0,
+                    "weekday": 7,
+                    "opening_type": "delivering",
+                    "opening_time": "11:00",
+                    "closing_time": "23:45"
+                },
+                {
+                    "id": 0,
+                    "weekday": 1,
+                    "opening_type": "pickup",
+                    "opening_time": "16:00",
+                    "closing_time": "23:45"
+                },
+                {
+                    "id": 0,
+                    "weekday": 2,
+                    "opening_type": "pickup",
+                    "opening_time": "16:00",
+                    "closing_time": "23:45"
+                },
+                {
+                    "id": 0,
+                    "weekday": 3,
+                    "opening_type": "pickup",
+                    "opening_time": "16:00",
+                    "closing_time": "23:45"
+                },
+                {
+                    "id": 0,
+                    "weekday": 4,
+                    "opening_type": "pickup",
+                    "opening_time": "16:00",
+                    "closing_time": "23:45"
+                },
+                {
+                    "id": 0,
+                    "weekday": 5,
+                    "opening_type": "pickup",
+                    "opening_time": "11:00",
+                    "closing_time": "23:45"
+                },
+                {
+                    "id": 0,
+                    "weekday": 6,
+                    "opening_type": "pickup",
+                    "opening_time": "11:00",
+                    "closing_time": "23:59"
+                },
+                {
+                    "id": 0,
+                    "weekday": 7,
+                    "opening_type": "pickup",
+                    "opening_time": "11:00",
+                    "closing_time": "23:45"
+                }
+            ],
+            "scoreCriteria": {
+                "vendor_id": 0,
+                "vendor_code": "",
+                "coefficients": null,
+                "vendor_values": null
+            },
+            "service_fee": 0,
+            "service_fee_percentage_amount": 0,
+            "service_tax_percentage_amount": 0,
+            "special_days": [],
+            "tag": "",
+            "tags": null,
+            "time_picker": null,
+            "trade_register_number": "",
+            "url_key": "da-bu-tong-suan-cai-bai-rou-guo",
+            "vat_percentage_amount": 0,
+            "characteristics": {
+                "cuisines": [
+                    {
+                        "id": 166,
+                        "name": "中式",
+                        "url_key": "zhong-shi",
+                        "main": true
+                    },
+                    {
+                        "id": 1214,
+                        "name": "火鍋",
+                        "url_key": "huo-guo",
+                        "main": false
+                    }
+                ],
+                "food_characteristics": [],
+                "primary_cuisine": {
+                    "id": 166,
+                    "name": "中式",
+                    "url_key": "zhong-shi",
+                    "main": true
+                }
+            },
+            "vendor_legal_information": {
+                "legal_name": "大不同麵食館",
+                "address_line_1": "(△)高雄市三民區自由一路222號"
+            },
+            "vendor_points": 1,
+            "vertical": "restaurants",
+            "vertical_segment": "restaurants",
+            "vertical_parent": "Restaurant",
+            "order_flow": "food",
+            "web_path": "https://www.foodpanda.com.tw/restaurant/f3qd/da-bu-tong-suan-cai-bai-rou-guo",
+            "website": "",
+            "has_online_payment": false,
+            "is_partner_cashback_disabled": false,
+            "vertical_type_ids": [
+                "restaurants"
+            ]
+        }
+    ]
+}
