@@ -63,24 +63,55 @@ await page.goto(pageUrl, {
 
 https://www.lengthytravel.com/create-anki-deck-google-sheets-spreadsheet/
 
+#### Official Docs
+https://docs.ankiweb.net/
 
+#### Note
+Add the template variable (fields) before adding the template HTML and styles. (Anki will throw an error).
+
+#### Test Sheet URL
+https://docs.google.com/spreadsheets/d/14EyU2Pdh6P3v9RtXIQ5xrtUxq5-3smwutTb7J62Z920/edit?usp=sharing
+
+#### template variable names
 ```
-Restaurant Name
-
-Genres
-
-
-Menu Category
-
-ITEM
-
-	Dish Name
-
-	Description
-
-	Image/s
-
-	Item Attributes
-		- customizations?? 
+{{restaurant-name}}
+{{restaurant-name-pinyin}}
+{{restaurant-name-english}}
+{{cuisines}}
+{{cuisines-pinyin}}
+{{cuisines-english}}
+{{dish}}
+{{dish-pinyin}}
+{{dish-english}}
+{{dish-type}}
+{{dish-type-pinyin}}
+{{dish-type-english}}
+{{dish-description}}
+{{dish-description-pinyin}}
+{{dish-description-english}}
+```
+```
+restaurant-name
+restaurant-name-pinyin
+restaurant-name-english
+cuisines
+cuisines-pinyin
+cuisines-english
+dish
+dish-pinyin
+dish-english
+dish-type
+dish-type-pinyin
+dish-type-english
+dish-description
+dish-description-pinyin
+dish-description-english
 ```
 
+
+
+Text to Speech
+https://docs.ankiweb.net/templates/fields.html?highlight=tts#text-to-speech
+```
+{{tts zh_TW:dish}}
+```
