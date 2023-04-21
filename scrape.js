@@ -1,4 +1,4 @@
-require('dotenv').config()
+require("dotenv").config();
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 const client = require("https");
@@ -75,43 +75,50 @@ const delay = (milliseconds) =>
     const contentType = headers["content-type"];
 
     if (contentType === "application/json") {
-      console.log("<<", response.status(), response.url());
       if (isMatch) {
-        const responseBuffer = await response.buffer();
-        const responseString = responseBuffer.toString();
-        const responseObj = JSON.parse(responseString);
-        console.log("stuff", responseObj.data);
-        const restaurant = responseObj.data;
+        try {
+          console.log("<<", response.status(), response.url());
+          const responseBuffer = await response.buffer();
+          const responseString = responseBuffer.toString();
+          const responseObj = JSON.parse(responseString);
+          console.log("stuff", responseObj.data);
+          const restaurant = responseObj.data;
 
-        if (!restaurant) return;
+          if (!restaurant) return;
 
-        // download images
-        if (restaurant.menus) {
-          for (var menuIndex in restaurant.menus) {
-            const menu = restaurant.menus[menuIndex];
-            const menuId = menu.id;
-            for (var menuCategoryIndex in menu.menu_categories) {
-              const menuCategory = menu.menu_categories[menuCategoryIndex];
-              const menuCategoryId = menuCategory.id;
+          // download images
+          if (restaurant.menus) {
+            for (var menuIndex in restaurant.menus) {
+              const menu = restaurant.menus[menuIndex];
+              const menuId = menu.id;
+              for (var menuCategoryIndex in menu.menu_categories) {
+                const menuCategory = menu.menu_categories[menuCategoryIndex];
+                const menuCategoryId = menuCategory.id;
 
-              for (var productIndex in menuCategory.products) {
-                const product = menuCategory.products[productIndex];
-                const productId = product.id;
+                for (var productIndex in menuCategory.products) {
+                  const product = menuCategory.products[productIndex];
+                  const productId = product.id;
 
-                if (product.images.length > 0) {
-                  image = product.images[0];
-                  const filepath = `menu-images/${runId}_${menuId}-${menuCategoryId}-${productId}.jpg`;
-                  product.images[0].local_filepath = filepath;
-                  // get urls
-                  await downloadImage(image.image_url, `./${filepath}`);
+                  if (product.images.length > 0) {
+                    image = product.images[0];
+                    const filepath = `menu-images/${runId}_${menuId}-${menuCategoryId}-${productId}.jpg`;
+                    product.images[0].local_filepath = filepath;
+                    // get urls
+                    await downloadImage(image.image_url, `./${filepath}`);
+                  }
                 }
               }
             }
           }
+          const file_path = RUN_FILE;
+          await updateJsonFile(file_path, restaurant);
+          //restaurants.push(restaurant);
+        } catch (e) {
+          console.log('**************************');
+          console.log('ERROR', e)
+          console.log('---------------------------');
+          console.log('**************************');
         }
-        const file_path = RUN_FILE;
-        updateJsonFile(file_path, restaurant);
-        //restaurants.push(restaurant);
       }
     }
   };
@@ -119,7 +126,7 @@ const delay = (milliseconds) =>
   // init the empty file for this run
   await fs.promises.writeFile(
     RUN_FILE,
-    JSON.stringify({'restaurants':[]}, null, 4),
+    JSON.stringify({ restaurants: [] }, null, 4),
     "utf8"
   );
 
@@ -165,8 +172,8 @@ const delay = (milliseconds) =>
   // consolelog(links);
   page.on("response", listenForMenus);
 
-  //for (let i = 0; i < links.length; i++) {
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < links.length; i++) {
+    // for (let i = 0; i < 1; i++) {
     const url = links[i];
     const restaurantResponse = await page.goto(`${url}`, {
       waitUntil: "networkidle0",
