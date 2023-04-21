@@ -89,7 +89,9 @@ https://docs.google.com/spreadsheets/d/14EyU2Pdh6P3v9RtXIQ5xrtUxq5-3smwutTb7J62Z
 {{dish-description}}
 {{dish-description-pinyin}}
 {{dish-description-english}}
+{{image-html}}
 ```
+
 ```
 restaurant-name
 restaurant-name-pinyin
@@ -106,6 +108,7 @@ dish-type-english
 dish-description
 dish-description-pinyin
 dish-description-english
+image-html
 ```
 
 
@@ -114,4 +117,10 @@ Text to Speech
 https://docs.ankiweb.net/templates/fields.html?highlight=tts#text-to-speech
 ```
 {{tts zh_TW:dish}}
+```
+
+### Add the example.jpg file to your media
+https://www.reddit.com/r/Anki/comments/bzyua5/where_to_find_collectionmedia_folder_mac/
+```
+cd ~/Library/Application\ Support/Anki2                                             2023-04-21-12
 ```
