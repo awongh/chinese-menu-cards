@@ -1,10 +1,11 @@
+require('dotenv').config()
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 const client = require("https");
 
 const restaurants = [];
 
-const wsChromeEndpointurl = YOUR CHROME SOCKET URL
+const wsChromeEndpointurl = process.env.WS_CHROME_ENDPOINT_URL;
 
 function formattedDate() {
   const date = new Date();
