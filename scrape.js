@@ -23,7 +23,7 @@ async function downloadImage(url, filepath) {
   return new Promise((resolve, reject) => {
     client.get(url, (res) => {
       if (res.statusCode === 200) {
-        console.log("workingh");
+        console.log("image downloading");
         res
           .pipe(fs.createWriteStream(filepath))
           .on("error", reject)
@@ -81,7 +81,6 @@ const delay = (milliseconds) =>
           const responseBuffer = await response.buffer();
           const responseString = responseBuffer.toString();
           const responseObj = JSON.parse(responseString);
-          console.log("stuff", responseObj.data);
           const restaurant = responseObj.data;
 
           if (!restaurant) return;
@@ -103,8 +102,12 @@ const delay = (milliseconds) =>
                     image = product.images[0];
                     const filepath = `menu-images/${runId}_${menuId}-${menuCategoryId}-${productId}.jpg`;
                     product.images[0].local_filepath = filepath;
-                    // get urls
-                    await downloadImage(image.image_url, `./${filepath}`);
+
+                    try {
+                      await downloadImage(image.image_url, `./${filepath}`);
+                    } catch (e) {
+                      console.log("ERROR with image download");
+                    }
                   }
                 }
               }
@@ -114,10 +117,10 @@ const delay = (milliseconds) =>
           await updateJsonFile(file_path, restaurant);
           //restaurants.push(restaurant);
         } catch (e) {
-          console.log('**************************');
-          console.log('ERROR', e)
-          console.log('---------------------------');
-          console.log('**************************');
+          console.log("**************************");
+          console.log("ERROR", e);
+          console.log("---------------------------");
+          console.log("**************************");
         }
       }
     }
@@ -175,20 +178,25 @@ const delay = (milliseconds) =>
   for (let i = 0; i < links.length; i++) {
     // for (let i = 0; i < 1; i++) {
     const url = links[i];
-    const restaurantResponse = await page.goto(`${url}`, {
-      waitUntil: "networkidle0",
-    });
-    // logs the status of the request to the page
-    console.log("Request status: ", restaurantResponse?.status(), "\n\n\n\n");
+    try {
+      const restaurantResponse = await page.goto(`${url}`, {
+        waitUntil: "networkidle0",
+      });
+      // logs the status of the request to the page
+      console.log("Request status: ", restaurantResponse?.status(), "\n\n\n\n");
+    } catch (e) {
+      console.log("ERROR waiting for restaurant page");
+    }
 
-    screenShotCounter += 1;
-    await page.screenshot({
-      path: `screenshots/${runId}_${screenShotCounter}-result.png`,
-    });
+    // screenShotCounter += 1;
+    // await page.screenshot({
+    //   path: `screenshots/${runId}_${screenShotCounter}-result.png`,
+    // });
 
-    console.log("Screenshot taken");
+    // console.log("Screenshot taken");
   }
 
   // Closes the browser instance
   //await browser.close();
 })();
+
