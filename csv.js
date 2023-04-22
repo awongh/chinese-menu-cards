@@ -42,10 +42,12 @@ const csvHeaders = [
   { id: "image-html", title: "image-html" },
 ];
 
-// const py = pinyin(input, {
-//   segment: true, // Enable segmentation. Needed for grouping.
-//   group: true, // Group pinyin segments
-// });
+function getPinYin(input) {
+  return pinyin(input, {
+    segment: true, // Enable segmentation. Needed for grouping.
+    group: true, // Group pinyin segments
+  });
+}
 
 function getCuisine(restaurant) {
   return restaurant?.characteristics?.cuisines
@@ -87,19 +89,19 @@ function extractData(jsonData) {
 
           const dish = {
             "restaurant-name": jsonRest.name,
-            "restaurant-name-pinyin": "placeholder",
+            "restaurant-name-pinyin": getPinYin(jsonRest.name),
             "restaurant-name-english": "placeholder",
             cuisines: cuisine,
-            "cuisines-pinyin": "placeholder",
+            "cuisines-pinyin": getPinYin(cuisine),
             "cuisines-english": "placeholder",
             dish: product.name,
-            "dish-pinyin": "placeholder",
+            "dish-pinyin": getPinYin(product.name),
             "dish-english": "placeholder",
             "dish-type": category.name,
-            "dish-type-pinyin": "placeholder",
+            "dish-type-pinyin": getPinYin(category.name),
             "dish-type-english": "placeholder",
             "dish-description": product.description,
-            "dish-description-pinyin": "placeholder",
+            "dish-description-pinyin": getPinYin(product.description),
             "dish-description-english": "placeholder",
             "image-html": imageHtml,
           };
