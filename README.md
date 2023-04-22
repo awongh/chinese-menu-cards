@@ -72,6 +72,8 @@ Add the template variable (fields) before adding the template HTML and styles. (
 #### Test Sheet URL
 https://docs.google.com/spreadsheets/d/14EyU2Pdh6P3v9RtXIQ5xrtUxq5-3smwutTb7J62Z920/edit?usp=sharing
 
+## Add the fields to the Anki Cards
+
 #### template variable names
 ```
 {{restaurant-name}}
@@ -112,11 +114,10 @@ image-html
 ```
 
 
-
-Text to Speech
+### Text to Speech
 https://docs.ankiweb.net/templates/fields.html?highlight=tts#text-to-speech
 ```
-{{tts zh_TW:dish}}
+{{tts zh_TW voices=Apple_Mei-Jia:dish}}
 ```
 
 ### Add the example.jpg file to your media
@@ -124,3 +125,36 @@ https://www.reddit.com/r/Anki/comments/bzyua5/where_to_find_collectionmedia_fold
 ```
 cd ~/Library/Application\ Support/Anki2                                             2023-04-21-12
 ```
+
+### Add the Card Templates to Anki
+```
+html/front-template.html
+html/back-template.html
+```
+
+See and Change the CSS of the card using the example templates
+
+## Copy all the media files
+```
+cp -R menu-images {PATH TO YOUR ANKI MEDIA COLLECTION}
+```
+
+## Run csv.js to turn the JSON into a CSV file
+
+#### Get the run ID from the JSON file.
+
+```
+node csv.js 2023-4-21-12-19-22_restaurants.json 2023-4-21-12-19-22
+```
+
+```
+node csv.js {JSON FILEPATH} {RUN ID}
+```
+
+ #### Create a new empty deck
+
+ #### Import the csv into Anki
+
+ #### Sync the deck to the cloud
+
+ # Enjoy

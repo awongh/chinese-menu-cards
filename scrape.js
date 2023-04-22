@@ -61,7 +61,7 @@ const delay = (milliseconds) =>
 
 (async () => {
   const runId = formattedDate();
-  const RUN_FILE = `./${runId}_restaurants.json`;
+  const RUN_FILE = `./json/${runId}_restaurants.json`;
 
   const listenForMenus = async (response) => {
     // listen for menu URL
