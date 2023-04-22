@@ -1,5 +1,18 @@
 # chinese-menu-cards
 
+This library downloads a set of restaruant menus from Food Panda and creates Anki flashcards out of them.
+
+An overview of the process looks like this:
+
+- Scrape a specific city for restaurants and menus.
+    - Creates a JSON file
+    - Saves associated image files locally
+- Use the JSON file to create a csv file for import into Anki
+    - also make pinyin and english translations of each item
+
+- Create a template and fieldset in Anki into which the csv will be imported.
+    - also has settings for iOS text-to-speech
+
 # Connecting Chrome to `scrape.js`
 
 https://medium.com/@jaredpotter1/connecting-puppeteer-to-existing-chrome-window-8a10828149e0
